@@ -181,7 +181,20 @@ nav div img {
     background-size: 120px;
     background-image: url(../img/publicidad.jpg);
 }
-.publicidad__img:hover{
+
+.publicidad__img:hover {
     background-image: url(../img/publicidad2.jpg);
 }
 
+.tienda {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px solid red;
+}
+.producto{
+    background-color: navy;
+    height: 300px;
+    width: 150px;
+}
