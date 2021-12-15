@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <!-- Comienzo Menu de navegacion -->
+        <nav>
+            <div>
+                <ul id="menu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a>
+                        <ul>
+                            <li><a href="#">MISION</a></li>
+                            <li><a href="#">VALORES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tienda.html">TIENDA</a></li>
+                    <li><a href="espacio.html">TU ESPACIO</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+        </nav>
+        <!-- Fin Menu navegacion -->
+    </header>
+    <main>
+        <!-- Inicio contenido principal -->
+        <div class="presentacion">
+            <h1>Escríbenos aqui tus comentarios</h1>
+            <form action="enviar.php">
+                <label for="nombre">Nombre: </label>
+                <input type="text"  name="nombre">
+                <label for="domicilio">Domicilio: </label>
+                <input type="text" name="domicilio">
+                <label for="telefono">Telefono: </label>
+                <input type="number"  name="telefono">
+                <label for="mail">E-mail:</label>
+                <input type="email"  name="mail"><br>
+                <textarea name="comentario"  cols="100" rows="10" required
+                    placeholder="Escribe tu comentario"></textarea><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
+        <!-- Fin contenido principal  -->
+        <!-- inicio publicidad -->
+        <aside class="publicidad">
+            <p>Tu anuncio aqui</p>
+            <div class="publicidad__img">
+            </div>
+        </aside>>
+        <!-- fin publicidad -->
+    </main>
+    </main>
+    <footer>
+        <!-- Inicio menu redes sociales -->
+        <div class="redes">
+            <ul>
+                <li><a href="#"><img src="../img/FACE.png" alt="facebook"> Facebook </a></li>
+                <li><a href="#"><img src="../img/insta.png" alt="instagram"> Instagram</a></li>
+                <li><a href="#"><img src="../img/wts.png" alt="whatsapp"> whatsapp</a></li>
+                <li><a href="#"><img src="../img/mail.png" alt="mail"> E-mail</a></li>
+            </ul>
+        </div>
+        <!-- fin menu redes sociales -->
+    </footer>
+</body>
+
+</html>

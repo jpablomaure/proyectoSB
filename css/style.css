@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comforter+Brush&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    height: 100vh;
+    background-color: navajowhite;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    min-width: 700px;
+    position: fixed;
+    min-height: 100px;
+    top: 0px;
+    background-color: #CB997E;
+}
+
+main {
+    display: flex;
+    padding-top: 1px;
+    margin-top: 90px;
+    height: inherit;
+    width: auto;
+    background-color: #B7B7A4;
+    justify-content: center;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: #CB997E;
+    color: rgb(230, 203, 136)
+}
+
+
+ul {
+    list-style: none;
+}
+
+nav div img {
+    padding: 2px;
+    margin: 2px;
+    height: 100px;
+    width: 200px;
+    border: 2px;
+}
+
+/* INICIO MENU */
+#menu li>a {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    text-align: right;
+    text-decoration: none;
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 1%
+}
+
+#menu li>a:hover {
+    color: #000;
+    background-color: #eaeaea;
+    transform: scale(1.05);
+}
+
+#menu>li {
+    float: right;
+    flex-flow: column-reverse wrap-reverse;
+    border-radius: 1%;
+    border-style: groove;
+}
+
+#menu li ul li a {
+    width: 100%;
+    margin-top: 1px;
+    text-align: center;
+}
+
+#menu>li>ul {
+    display: none;
+}
+
+#menu>li:hover>ul {
+    display: block;
+}
+
+/* FIN MENU */
+
+#video {
+    border: 2px solid black;
+    display: inline;
+}
+
+/* INICION MENU REDES footer */
+.redes {
+    padding: 5px;
+}
+
+.redes li>a {
+    list-style: none;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: small;
+}
+
+.redes li {
+    display: inline;
+    text-align: center;
+
+}
+
+.redes img {
+    width: 30px;
+}
+
+/* FIN MENU REDES footer */
+
+.titulo {
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 2em;
+}
+
+/* CAJA PRESENTACION DE CONTENIDO */
+.presentacion {
+    padding: 10px;
+    margin-top: 2px;
+    overflow: hidden;
+    display: inline;
+}
+
+.presentacion__img {
+    height: 70%;
+    width: auto;
+    padding: 10px;
+    margin: 4px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+/* CAJA PARA PUBLICIDAD */
+.publicidad {
+    border: 2px solid black;
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    height: 60%;
+    position: sticky;
+    top: 120px;
+    right: initial;
+    text-align: center;
+}
+
+
+.publicidad p {
+    font-size: 20px;
+    padding: 4px;
+    text-align: center;
+}
+
+.publicidad__img {
+    height: 120px;
+    width: 120px;
+    padding: 4px;
+    margin: 4px;
+    background-size: 120px;
+    background-image: url(../img/publicidad.jpg);
+}
+.publicidad__img:hover{
+    background-image: url(../img/publicidad2.jpg);
+}
+
