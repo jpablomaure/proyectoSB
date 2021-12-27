@@ -91,30 +91,11 @@ header>nav {
 #menu li>a:hover {
     color: #000;
     background-color: #eaeaea;
-    animation: sobre 1.5s infinite;
-}
-
-@keyframes sobre {
-    0% {
-        transform: scale(.99);
-        box-shadow: 2px 2px 1px #333;
-    }
-
-    50% {
-        transform: scale(1.2);
-        box-shadow: 5px 5px 2px #333;
-    }
-
-    0% {
-        transform: scale(.99);
-        box-shadow: 2px 2x 1px #333;
-    }
-
 }
 
 #menu>li {
     border-radius: 1%;
-    border-style: groove;
+    border-style: groove; 
 }
 
 #menu li ul li a {
