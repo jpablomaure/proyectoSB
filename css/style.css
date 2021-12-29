@@ -1,146 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comforter+Brush&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Licorice&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
     width: auto;
-    background-color: navajowhite;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 300px 170px 300px auto;
-    grid-template-rows: auto;
-    float: right;
-    height: 90px;
-    width: 100%;
-    min-width: 700px;
-    position: fixed;
-    justify-content: center;
-    min-height: 100px;
-    top: 0px;
-    background-color: #CB997E;
+    /* background-color: navajowhite; */
 }
 
 main {
-    padding: 20px;
-    margin-top: 90px;
-    height: auto;
-    width: auto;
-    background-color: #B7B7A4;
-    justify-content: center;
+    /* background-image: url(../img/soybohemiafondo2.jpg); */
+    background-repeat: repeat;
+    background-color: white;
+    border-top: 3px solid #A5A58D;
 }
+
+.btn {
+    background-color: #b7b7a4;
+}
+
+nav {
+    font-family: 'Architects Daughter', cursive;
+    /* background: linear-gradient(to bottom, #CB997E, #B7B7A4); */
+    background-color: #6b705c;
+}
+
+.btn {
+    color: white;
+    border-color: 1px solid black;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #eaeaea;
+    animation: sobre 1.5s infinite;
+}
+
+@keyframes sobre {
+    0% {
+        transform: scale(.99);
+        box-shadow: 2px 2px 1px #222;
+    }
+
+    50% {
+        transform: scale(1.2);
+        box-shadow: 5px 5px 2px #222;
+    }
+
+    0% {
+        transform: scale(.99);
+        box-shadow: 2px 2px 1px #222;
+    }
+}
+
 
 footer {
-    height: 60px;
-    width: 100%;
-    background-color: #CB997E;
-    color: rgb(230, 203, 136)
-}
-
-#logo {
-    grid-area: logo;
-    grid-column: 2/3;
-    grid-row: auto;
-    width: 100%;
+    /* background: linear-gradient(to bottom, navajowhite, #CB997E); */
+    margin-top: 7px;
+    background-color: #6b705c;
 }
 
 /* INICIO MENU */
-
-ul {
-    list-style: none;
-}
-
-#navegacion {
-    grid-area: navegacion;
-    grid-column: 4/5;
-    grid-row: 1/2;
-    width: 450px;
-    justify-self: center;
-}
-
-header>nav {
-    float: right;
-    margin-top: 20px;
-}
-
-#menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 50%;
-    min-width: 450px;
-    margin-top: 5px;
-}
-
-#menu li>a {
-    background-color: grey;
-    color: white;
-    padding: 5px;
-    display: inline-block;
-    text-align: right;
-    text-decoration: none;
-    font-family: 'Architects Daughter', cursive;
-    border-radius: 1%;
-}
 
 #menu li>a:hover {
     color: #000;
     background-color: #eaeaea;
     animation: sobre 1.5s infinite;
 }
+
 @keyframes sobre {
-    0%{
+    0% {
         transform: scale(.99);
         box-shadow: 2px 2px 1px #222;
     }
-    50%{
+
+    50% {
         transform: scale(1.2);
         box-shadow: 5px 5px 2px #222;
     }
-    
-    0%{
+
+    0% {
         transform: scale(.99);
         box-shadow: 2px 2px 1px #222;
     }
 }
 
-#menu>li {
-    border-radius: 1%;
-    border-style: groove; 
+.container {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #B7B7A4;
+    box-shadow: 5px 5px 5px;
 }
 
-#menu li ul li a {
-    width: 100%;
-    margin-top: 1px;
-    text-align: center;
-}
-
-#menu>li>ul {
-    display: none;
-}
-
-#menu>li:hover>ul {
-    display: block;
-}
 
 /* FIN MENU */
-
-/* Video de nosotros  */
-
-#video {
-    grid-area: video;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: inline;
-    width: 160px;
-    height: 285px;
-    padding: 10px;
-}
 
 /* INICION MENU REDES footer */
 .redes {
@@ -152,6 +109,7 @@ header>nav {
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: small;
+    color: #222;
 }
 
 .redes li {
@@ -168,69 +126,47 @@ header>nav {
 
 /* CAJA PRESENTACION DE CONTENIDO */
 .presentacion {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: none;
-    padding: 10px;
-    margin-top: 2px;
-    overflow: hidden;
+    margin: 10px;
+    min-width: 260px;
 }
 
-.presentacion__img {
-    grid-area: presentacion__img;
-    grid-column: 1/2;
-    width: auto;
-    padding: 10px;
-    margin: 4px;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
+.presentacion img {
+    width: 100%;
 }
 
 /* Presentacion de pagina nosotros  */
-
-.nosotrosPresenta {
-    grid-area: nosotrosPresenta;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    padding: 10px;
-}
-
-.nosotrosPresentaMision {
-    grid-area: nosotrosPresentaMision;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding: 10px;
-    margin-top: 285px;
+.nosotrosPresentaMision h2 {
+    font-family: 'Architects Daughter', cursive;
 }
 
 /* titulos de presentaciones */
 
 .titulo {
-    padding: 10px;
-    margin: 5px;
     font-family: 'Architects Daughter', cursive;
     font-weight: bold;
     text-align: center;
-    width: 100%;
-    height: 90px;
 }
 
 .titulo h1 {
     font-size: 2em;
-    background: linear-gradient(#CB997E, #B7B7A4);
+    background: linear-gradient(#6b705c, white);
+    font-family: Arial, Helvetica, sans-serif
 }
 
+.titulo span {
+    font-size: 2em;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Licorice', cursive;
+}
+
+.titulo p {
+
+    font-family: Arial, Helvetica, sans-serif
+}
 /* INICIA contenido de TU ESPACIO  */
-#introduccion {
+.introduccion {
+    margin: 10px;
     padding: 10px;
-}
-
-.espacio {
-    grid-area: espacio;
-    grid-column: 1/2;
-    padding: 10px;
-    overflow: hidden;
 }
 
 /* FINALIZA contenido de TU ESPACIO  */
@@ -244,45 +180,31 @@ header>nav {
 
 
 /* INICIA CAJA PARA PUBLICIDAD */
-.publicidad {
-    grid-area: publicidad;
-    grid-column: 2/3;
+#publicidad {
+
     border: 2px solid rgb(165, 156, 88);
-    border-radius: 20%;
-    margin-top: 120px;
-    margin-left: 20px;
-    margin-right: 20px;
+    border-radius: 10%;
     width: auto;
     min-width: 152px;
     max-width: 180px;
     height: 300px;
-    top: 120px;
-    right: initial;
+    min-height: 150px;
     text-align: center;
     background: linear-gradient(#CB997E, #efdace);
     box-shadow: 10px 10px 5px rgb(104, 104, 104);
 }
 
 
-.publicidad p {
-    font-size: 20px;
+#publicidad p {
+    font-size: 18px;
     padding: 4px;
     text-align: center;
     background: linear-gradient(navajowhite, white);
-    border-radius: 20%;
+    border-radius: 15%;
 }
 
-.publicidad__img {
-    height: 180px;
-    width: auto;
-    padding: 4px;
-    margin: 4px;
-    background-size: 120px;
-    background-image: url(../img/publicidad\ \(1\).png);
-}
-
-.publicidad__img:hover {
-    background-image: url(../img/publicidad\ \(2\).png);
+.publicidad__img img {
+    width: 100%;
 }
 
 .publicidad__img__2 {
@@ -291,19 +213,17 @@ header>nav {
     padding: 4px;
     margin: 4px;
     background-size: 120px;
-    background-image: url(../img/publicidad\ \(3\).png);
+    background-image: url(../img/publicidad3.png);
 }
 
 .publicidad__img__2:hover {
-    background-image: url(../img/publicidad\ \(4\).png);
+    background-image: url(../img/publicidad4.png);
 }
 
 /* FINALIZA CAJA PARA PUBLICIDAD */
 
 /* INICIA TIENDA  */
 .tienda {
-    grid-area: tienda;
-    grid-column: 1/2;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -311,6 +231,7 @@ header>nav {
     min-width: 440px;
     gap: 10px;
     padding: 10px;
+    margin: 10px;
 }
 
 .producto {
@@ -318,7 +239,7 @@ header>nav {
     height: 200px;
     border: 2px solid #000;
     border-radius: 10px;
-    background-color: burlywood;
+    background-color: #F0EFEB;
     text-align: center;
 }
 
@@ -330,18 +251,34 @@ header>nav {
 }
 
 .producto img:hover {
-    transform: translate(10px, -10px);
+    /* transform: translate(10px, -10px); */
+    animation: mueveProd 1s normal;
+}
+
+@keyframes mueveProd {
+    0% {
+        transform: translate(1px -1px);
+    }
+
+    50% {
+        transform: translate(5px -5px);
+    }
+
+    100% {
+        transform: translate(10px -10px);
+    }
+
 }
 
 /* FINALIZA TIENDA  */
 
 /* COMIENZA MEDIA QUERIES  */
 
-@media only screen and (min-width: 360px) and (max-width: 640px) {
+/* @media only screen and (min-width: 360px) and (max-width: 640px) {
 
-    header {
-        /* nuevo */
-        display: grid;
+    header { */
+/* nuevo */
+/* display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto;
         height: 110px;
@@ -466,7 +403,6 @@ header>nav {
         grid-template-rows: auto;
     }
 
-}
-
+} */
 
 /* FINALIZA MEDIA QUERIES  */

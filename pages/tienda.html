@@ -5,83 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Tienda</title>
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <a href="../index.html"><img src="../img/logo.png" heigth="96px" width="170px" alt="logo"></a>
-        </div>
-        <!-- Comienzo Menu de navegacion -->
-        <nav id="navegacion">
-            <div>
-                <ul id="menu">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="nosotros.html">NOSOTROS</a></li>
-                    <li><a href="#">TIENDA</a></li>
-                    <li><a href="espacio.html">TU ESPACIO</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
+    <!-- INICIO menu navegacion -->
 
+    <nav class="navbar navbar-expand-sm navbar-light ">
+        <a class="navbar-brand" href="../index.html"> <img src="../img/logo.png" heigth="96px" width="170px"
+                alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="btn btn-sm btn-outline-secondary" href="../index.html">HOME</a>
+                <a class="btn btn-sm btn-outline-secondary" href="nosotros.html">NOSOTROS</a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">TIENDA</a>
+                <a class="btn btn-sm btn-outline-secondary" href="espacio.html">TU ESPACIO</a>
+                <a class="btn btn-sm btn-outline-secondary" href="contacto.html">CONTACTO</a>
             </div>
-        </nav>
-        <!-- Fin Menu navegacion -->
+        </div>
+    </nav>
+    <!-- FIN menu navegacion -->
     </header>
     <main>
         <!--  Inicio contenido principal -->
         <section class="titulo">
             <h1>TIENDA</h1>
         </section>
-        <div class="presentacion">
-            <section class="tienda">
-                <div class="producto producto1">
-                    <p>Aromatizador</p>
-                    <img src="../img/tienda (1).jpg" alt="Aromatizador">
-                    <p>$1.500</p>
-                </div>
-                <div class="producto producto2">
-                    <p>Sillón</p>
-                    <img src="../img/tienda (2).jpg" alt="sillon">
-                    <p>$1.500</p>
-                </div>
-                <div class="producto producto3">
-                    <p>Lámpara</p>
-                    <img src="../img/tienda (3).jpg" alt="lampara">
-                    <p>$1.500</p>
-                </div>
-                <div class="producto producto4">
-                    <p>Perchero</p>
-                    <img src="../img/tienda (4).jpg" alt="Perchero">
-                    <p>$1.500</p>
-                </div>
-                <div class="producto producto5">
-                    <p>Sillón</p>
-                    <img src="../img/tienda (5).jpg" alt="sillon">
-                    <p>$1.500</p>
-                </div>
-                <div class="producto producto6">
-                    <p>Velas</p>
-                    <img src="../img/tienda (6).jpg" alt="Velas">
-                    <p>$1.500</p>
-                </div>
-            </section>
+        <div class="container">
+            <div class="row">
+                <section class="tienda col-lg-12 col-sm-1">
+                    <div class="producto producto1">
+                        <p>Aromatizador</p>
+                        <img src="../img/tienda (1).jpg" alt="Aromatizador">
+                        <p>$1.500</p>
+                    </div>
+                    <div class="producto producto2">
+                        <p>Sillón</p>
+                        <img src="../img/tienda (2).jpg" alt="sillon">
+                        <p>$1.500</p>
+                    </div>
+                    <div class="producto producto3">
+                        <p>Lámpara</p>
+                        <img src="../img/tienda (3).jpg" alt="lampara">
+                        <p>$1.500</p>
+                    </div>
+                    <div class="producto producto4">
+                        <p>Perchero</p>
+                        <img src="../img/tienda (4).jpg" alt="Perchero">
+                        <p>$1.500</p>
+                    </div>
+                    <div class="producto producto5">
+                        <p>Sillón</p>
+                        <img src="../img/tienda (5).jpg" alt="sillon">
+                        <p>$1.500</p>
+                    </div>
+                    <div class="producto producto6">
+                        <p>Velas</p>
+                        <img src="../img/tienda (6).jpg" alt="Velas">
+                        <p>$1.500</p>
+                    </div>
+                </section>
 
-            <!-- </div> -->
-            <!-- Fin contenido principal  -->
-            <!-- inicio publicidad -->
-            <aside class="publicidad">
-                <a href="https://www.instagram.com/solpaloudeco/" target="_blanck">
-                    <p>Sol Palau Deco</p>
-                </a>
-                <div class="publicidad__img">
-                </div>
-            </aside>
-            <!-- Fin contenido principal  -->
+                <!-- Fin contenido principal  -->
 
-            <!-- fin publicidad -->
-            </section>
+            </div>
+        </div>
     </main>
     <footer>
         <!-- Inicio menu redes sociales -->
@@ -95,9 +90,17 @@
                             src="../img/wts.png" alt="whatsapp"> whatsapp</a></li>
                 <li><a href="mailto:soybohemia26@gmail.com"><img src="../img/mail.png" alt="mail"> E-mail</a></li>
             </ul>
-        </div>
-        <!-- fin menu redes sociales -->
+            <!-- fin menu redes sociales -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
