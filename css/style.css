@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comforter+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Licorice&display=swap');
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -132,6 +133,7 @@ footer {
 
 .presentacion img {
     width: 100%;
+    min-width: 250px;
 }
 
 /* Presentacion de pagina nosotros  */
@@ -163,6 +165,7 @@ footer {
 
     font-family: Arial, Helvetica, sans-serif
 }
+
 /* INICIA contenido de TU ESPACIO  */
 .introduccion {
     margin: 10px;
@@ -178,17 +181,17 @@ footer {
     overflow: hidden;
 }
 
-
 /* INICIA CAJA PARA PUBLICIDAD */
 #publicidad {
 
     border: 2px solid rgb(165, 156, 88);
     border-radius: 10%;
     width: auto;
-    min-width: 152px;
+    /* min-width: 152px; */
     max-width: 180px;
     height: 300px;
-    min-height: 150px;
+    margin: 10px;
+    /* min-height: 150px; */
     text-align: center;
     background: linear-gradient(#CB997E, #efdace);
     box-shadow: 10px 10px 5px rgb(104, 104, 104);
@@ -196,11 +199,12 @@ footer {
 
 
 #publicidad p {
-    font-size: 18px;
+    /* font-size: 18px; */
     padding: 4px;
     text-align: center;
     background: linear-gradient(navajowhite, white);
     border-radius: 15%;
+    margin: 5px;
 }
 
 .publicidad__img img {
@@ -228,7 +232,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    min-width: 440px;
     gap: 10px;
     padding: 10px;
     margin: 10px;
@@ -241,6 +244,8 @@ footer {
     border-radius: 10px;
     background-color: #F0EFEB;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 .producto img {
@@ -251,7 +256,6 @@ footer {
 }
 
 .producto img:hover {
-    /* transform: translate(10px, -10px); */
     animation: mueveProd 1s normal;
 }
 
