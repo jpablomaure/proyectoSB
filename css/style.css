@@ -13,7 +13,6 @@ body {
 }
 
 main {
-    /* background-image: url(../img/soybohemiafondo2.jpg); */
     background-repeat: repeat;
     background-color: white;
     border-top: 3px solid #A5A58D;
@@ -59,7 +58,6 @@ nav {
 
 
 footer {
-    /* background: linear-gradient(to bottom, navajowhite, #CB997E); */
     margin-top: 7px;
     background-color: #6b705c;
 }
@@ -100,7 +98,7 @@ footer {
 
 /* FIN MENU */
 
-/* INICION MENU REDES footer */
+/* INICIO MENU REDES footer */
 .redes {
     padding: 5px;
 }
@@ -199,7 +197,6 @@ footer {
 
 
 #publicidad p {
-    /* font-size: 18px; */
     padding: 4px;
     text-align: center;
     background: linear-gradient(navajowhite, white);
