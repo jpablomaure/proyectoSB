@@ -1,277 +1,233 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comforter+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Licorice&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comforter+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Licorice&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: auto;
-    /* background-color: navajowhite; */
+  width: auto;
 }
 
 main {
-    /* background-image: url(../img/soybohemiafondo2.jpg); */
-    background-repeat: repeat;
-    background-color: white;
-    border-top: 3px solid #A5A58D;
-}
-
-.btn {
-    background-color: #b7b7a4;
+  background-repeat: repeat;
+  background-color: white;
+  border-top: 3px solid #A5A58D;
 }
 
 nav {
-    font-family: 'Architects Daughter', cursive;
-    /* background: linear-gradient(to bottom, #CB997E, #B7B7A4); */
-    background-color: #6b705c;
+  font-family: "Architects Daughter", cursive;
+  background-color: #6b705c;
 }
 
 .btn {
-    color: white;
-    border-color: 1px solid black;
+  color: white;
+  border-color: 1px solid black;
+  background-color: #b7b7a4;
 }
-
 .btn:hover {
-    color: #000;
-    background-color: #eaeaea;
-    animation: sobre 1.5s infinite;
+  color: #000;
+  background-color: #eaeaea;
+  animation: sobre 1.5s infinite;
 }
 
 @keyframes sobre {
-    0% {
-        transform: scale(.99);
-        box-shadow: 2px 2px 1px #222;
-    }
-
-    50% {
-        transform: scale(1.2);
-        box-shadow: 5px 5px 2px #222;
-    }
-
-    0% {
-        transform: scale(.99);
-        box-shadow: 2px 2px 1px #222;
-    }
+  0% {
+    transform: scale(0.99);
+    box-shadow: 2px 2px 1px #222;
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 2px #222;
+  }
+  0% {
+    transform: scale(0.99);
+    box-shadow: 2px 2px 1px #222;
+  }
 }
-
-
 footer {
-    /* background: linear-gradient(to bottom, navajowhite, #CB997E); */
-    margin-top: 7px;
-    background-color: #6b705c;
+  margin-top: 20px;
+  background-color: #6b705c;
 }
 
 /* INICIO MENU */
-
-#menu li>a:hover {
-    color: #000;
-    background-color: #eaeaea;
-    animation: sobre 1.5s infinite;
+#menu li > a:hover {
+  color: #000;
+  background-color: #eaeaea;
+  animation: sobre 1.5s infinite;
 }
 
 @keyframes sobre {
-    0% {
-        transform: scale(.99);
-        box-shadow: 2px 2px 1px #222;
-    }
-
-    50% {
-        transform: scale(1.2);
-        box-shadow: 5px 5px 2px #222;
-    }
-
-    0% {
-        transform: scale(.99);
-        box-shadow: 2px 2px 1px #222;
-    }
+  0% {
+    transform: scale(0.99);
+    box-shadow: 2px 2px 1px #222;
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 2px #222;
+  }
+  0% {
+    transform: scale(0.99);
+    box-shadow: 2px 2px 1px #222;
+  }
 }
-
 .container {
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #B7B7A4;
-    box-shadow: 5px 5px 5px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #B7B7A4;
+  box-shadow: 5px 5px 5px;
 }
-
 
 /* FIN MENU */
-
 /* INICION MENU REDES footer */
 .redes {
-    padding: 5px;
+  padding: 5px;
 }
-
-.redes li>a {
-    list-style: none;
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: small;
-    color: #222;
+.redes li > a {
+  list-style: none;
+  text-decoration: none;
+  font-size: small;
+  color: white;
 }
-
 .redes li {
-    display: inline;
-    text-align: center;
-
+  display: inline;
+  text-align: center;
+  padding-right: 10px;
 }
-
 .redes img {
-    width: 30px;
+  width: 30px;
 }
 
 /* FIN MENU REDES footer */
-
 /* CAJA PRESENTACION DE CONTENIDO */
 .presentacion {
-    margin: 10px;
-    min-width: 260px;
+  margin: 10px;
+  min-width: 260px;
 }
-
 .presentacion img {
-    width: 100%;
-    min-width: 250px;
+  width: 100%;
+  min-width: 250px;
 }
 
 /* Presentacion de pagina nosotros  */
 .nosotrosPresentaMision h2 {
-    font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
 }
 
 /* titulos de presentaciones */
-
 .titulo {
-    font-family: 'Architects Daughter', cursive;
-    font-weight: bold;
-    text-align: center;
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  text-align: center;
 }
-
 .titulo h1 {
-    font-size: 2em;
-    background: linear-gradient(#6b705c, white);
-    font-family: Arial, Helvetica, sans-serif
+  font-size: 2em;
+  background: linear-gradient(#6b705c, white);
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 .titulo span {
-    font-size: 2em;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Licorice', cursive;
+  font-size: 2em;
+  font-family: "Barlow", sans-serif;
+  font-family: "Licorice", cursive;
 }
-
 .titulo p {
-
-    font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* INICIA contenido de TU ESPACIO  */
 .introduccion {
-    margin: 10px;
-    padding: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* FINALIZA contenido de TU ESPACIO  */
-
 /* Formulario de contacto */
 #formulario {
-    grid-area: formulario;
-    grid-column: 1/2;
-    overflow: hidden;
+  margin: 10px;
+}
+#formulario.campos label {
+  padding: 10px;
+  width: 25%;
+  float: left;
 }
 
 /* INICIA CAJA PARA PUBLICIDAD */
 #publicidad {
-
-    border: 2px solid rgb(165, 156, 88);
-    border-radius: 10%;
-    width: auto;
-    /* min-width: 152px; */
-    max-width: 180px;
-    height: 300px;
-    margin: 10px;
-    /* min-height: 150px; */
-    text-align: center;
-    background: linear-gradient(#CB997E, #efdace);
-    box-shadow: 10px 10px 5px rgb(104, 104, 104);
+  border: 2px solid #a59c58;
+  border-radius: 10%;
+  width: auto;
+  max-width: 180px;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  background: linear-gradient(#CB997E, #efdace);
+  box-shadow: 10px 10px 5px #686868;
 }
-
-
 #publicidad p {
-    /* font-size: 18px; */
-    padding: 4px;
-    text-align: center;
-    background: linear-gradient(navajowhite, white);
-    border-radius: 15%;
-    margin: 5px;
-}
-
-.publicidad__img img {
-    width: 100%;
-}
-
-.publicidad__img__2 {
-    height: 180px;
-    width: auto;
-    padding: 4px;
-    margin: 4px;
-    background-size: 120px;
-    background-image: url(../img/publicidad3.png);
-}
-
-.publicidad__img__2:hover {
-    background-image: url(../img/publicidad4.png);
+  padding: 4px;
+  text-align: center;
+  background: linear-gradient(navajowhite, white);
+  border-radius: 15%;
+  margin: 5px;
 }
 
 /* FINALIZA CAJA PARA PUBLICIDAD */
-
 /* INICIA TIENDA  */
 .tienda {
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
-    padding: 10px;
-    margin: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .producto {
-    width: 200px;
-    height: 200px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    background-color: #F0EFEB;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #F0EFEB;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
-
 .producto img {
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    box-shadow: 10px silver;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  box-shadow: 10px silver;
 }
-
 .producto img:hover {
-    animation: mueveProd 1s normal;
+  animation: mueveProd 1s infinite;
+}
+.producto p {
+  background-color: #B7B7A4;
 }
 
 @keyframes mueveProd {
-    0% {
-        transform: translate(1px -1px);
-    }
-
-    50% {
-        transform: translate(5px -5px);
-    }
-
-    100% {
-        transform: translate(10px -10px);
-    }
-
+  0% {
+    transform: translate(5px);
+    transform: escale(0.99);
+    box-shadow: -2px -2px 1px #222;
+    border: 1px solid black;
+  }
+  50% {
+    transform: translate(10px);
+    transform: escale(1.2);
+    box-shadow: -5px -5px 2px #222;
+    border: 2px solid black;
+  }
+  100% {
+    transform: translate(5px);
+    transform: escale(0.99);
+    box-shadow: -2px -2px 1px #222;
+    border: 1px solid black;
+  }
 }
-
 /* FINALIZA TIENDA  */
+
+/*# sourceMappingURL=style.css.map */

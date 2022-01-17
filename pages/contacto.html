@@ -36,23 +36,33 @@
     </header>
     <main>
         <!--  Inicio contenido principal -->
-        <section class="titulo">
+        <div class="titulo">
             <h1>Escribanos aquí sus comentarios</h1>
-        </section>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="presentacion col-12">
                     <form id="formulario" action="enviar.php">
-                        <label for="nombre">Nombre: </label>
-                        <input type="text" name="nombre">
-                        <label for="domicilio">Domicilio: </label>
-                        <input type="text" name="domicilio">
-                        <label for="telefono">Telefono: </label>
-                        <input type="number" name="telefono">
-                        <label for="mail">E-mail:</label>
-                        <input type="email" name="mail"><br>
-                        <textarea name="comentario" cols="100" rows="10" required
-                            placeholder="Escribe tu comentario"></textarea><br>
+                        <div class="campos">
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" name="nombre">
+                        </div>
+                        <div class="campos">
+                            <label for="domicilio">Domicilio: </label>
+                            <input type="text" name="domicilio">
+                        </div>
+                        <div class="campos">
+                            <label for="telefono">Telefono: </label>
+                            <input type="number" name="telefono">
+                        </div>
+                        <div class="campos">
+                            <label for="mail">E-mail:</label>
+                            <input type="email" name="mail"><br>
+                        </div>
+                        <div class="campos">
+                            <textarea name="comentario" cols="100" rows="10" required
+                                placeholder="Escribe tu comentario"></textarea><br>
+                        </div>
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Borrar">
                     </form>
