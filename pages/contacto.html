@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de contacto son Soy Bohemia">
+    <meta name="keywords" content="contacto comunicacion">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -41,30 +43,36 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="presentacion col-12">
+                <div class="presentacion col-12 col-xl-8">
                     <form id="formulario" action="enviar.php">
-                        <div class="campos">
-                            <label for="nombre">Nombre: </label>
-                            <input type="text" name="nombre">
-                        </div>
-                        <div class="campos">
-                            <label for="domicilio">Domicilio: </label>
-                            <input type="text" name="domicilio">
-                        </div>
-                        <div class="campos">
-                            <label for="telefono">Telefono: </label>
-                            <input type="number" name="telefono">
-                        </div>
-                        <div class="campos">
-                            <label for="mail">E-mail:</label>
-                            <input type="email" name="mail"><br>
-                        </div>
-                        <div class="campos">
-                            <textarea name="comentario" cols="100" rows="10" required
-                                placeholder="Escribe tu comentario"></textarea><br>
-                        </div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
+                        <ul class="campos">
+                            <li>
+
+                                <label for="nombre">Nombre: </label>
+                                <input type="text" name="nombre">
+
+                            </li>
+                            <li>
+                                <label for="domicilio">Domicilio: </label>
+                                <input type="text" name="domicilio">
+                            </li>
+                            <li>
+                                <label for="telefono">Telefono: </label>
+                                <input type="number" name="telefono">
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" name="mail"><br>
+                            </li>
+                            <li>
+                                <textarea name="comentario" cols="100" rows="10" required
+                                    placeholder="Escribe tu comentario"></textarea><br>
+                            </li>
+                            <li>
+                                <input class="botonesForm" type="submit" value="Enviar">
+                                <input class="botonesForm" type="reset" value="Borrar">
+                            </li>
+                        </ul>
                     </form>
                     </section>
                 </div>
@@ -81,9 +89,11 @@
                             alt="instagram"> Instagram</a></li>
                 <li><a href="https://api.whatsapp.com/send?phone=5492616865087" target="_blank"><img
                             src="../img/wts.png" alt="whatsapp"> whatsapp</a></li>
-                <li><a href="mailto:soybohemia26@gmail.com"><img src="../img/mail.png" alt="mail"> E-mail</a></li>
+                <li><a href="mailto:soybohemia26@gmail.com"><img src="../img/mail.png" alt="mail"> E-mail</a>
+                </li>
             </ul>
         </div>
+
         <!-- fin menu redes sociales -->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

@@ -11,7 +11,6 @@ body {
 }
 
 main {
-  background-repeat: repeat;
   background-color: white;
   border-top: 3px solid #A5A58D;
 }
@@ -78,6 +77,7 @@ footer {
   border-radius: 10px;
   background-color: #B7B7A4;
   box-shadow: 5px 5px 5px;
+  width: 90%;
 }
 
 /* FIN MENU */
@@ -88,7 +88,7 @@ footer {
 .redes li > a {
   list-style: none;
   text-decoration: none;
-  font-size: small;
+  font-size: 0.8rem;
   color: white;
 }
 .redes li {
@@ -97,18 +97,17 @@ footer {
   padding-right: 10px;
 }
 .redes img {
-  width: 30px;
+  width: 25px;
 }
 
 /* FIN MENU REDES footer */
 /* CAJA PRESENTACION DE CONTENIDO */
 .presentacion {
-  margin: 10px;
-  min-width: 260px;
+  margin: 15px;
+  padding: 10px;
 }
 .presentacion img {
   width: 100%;
-  min-width: 250px;
 }
 
 /* Presentacion de pagina nosotros  */
@@ -138,8 +137,8 @@ footer {
 
 /* INICIA contenido de TU ESPACIO  */
 .introduccion {
-  margin: 10px;
   padding: 10px;
+  margin: 10px;
 }
 
 /* FINALIZA contenido de TU ESPACIO  */
@@ -147,10 +146,30 @@ footer {
 #formulario {
   margin: 10px;
 }
-#formulario.campos label {
+
+.campos li,
+.interno {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 10px;
-  width: 25%;
-  float: left;
+  margin: 10px;
+}
+
+.campos > li > label,
+.campos li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.campos > li > label + *,
+.interno {
+  flex: 1 0 220px;
+}
+
+.botonesForm {
+  padding: 10px;
+  margin: 10px;
 }
 
 /* INICIA CAJA PARA PUBLICIDAD */
@@ -187,25 +206,82 @@ footer {
 
 .producto {
   width: 200px;
-  height: 200px;
+  height: 250px;
   border: 2px solid #000;
   border-radius: 10px;
   background-color: #F0EFEB;
   text-align: center;
+  padding: 10px;
   margin: 10px;
-  padding: 10px;
-}
-.producto img {
-  width: 150px;
-  height: 150px;
-  padding: 10px;
-  box-shadow: 10px silver;
-}
-.producto img:hover {
-  animation: mueveProd 1s infinite;
 }
 .producto p {
   background-color: #B7B7A4;
+}
+.producto .producto--prod1 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px silver;
+  background-image: url(../img/tienda1.jpg);
+}
+.producto .producto--prod1:hover {
+  animation: mueveProd 1s infinite;
+}
+.producto .producto--prod2 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px silver;
+  background-image: url(../img/tienda2.jpg);
+}
+.producto .producto--prod2:hover {
+  animation: mueveProd 1s infinite;
+}
+.producto .producto--prod3 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px silver;
+  background-image: url(../img/tienda3.jpg);
+}
+.producto .producto--prod3:hover {
+  animation: mueveProd 1s infinite;
+}
+.producto .producto--prod4 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px silver;
+  background-image: url(../img/tienda4.jpg);
+}
+.producto .producto--prod4:hover {
+  animation: mueveProd 1s infinite;
+}
+.producto .producto--prod5 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px silver;
+  background-image: url(../img/tienda5.jpg);
+}
+.producto .producto--prod5:hover {
+  animation: mueveProd 1s infinite;
+}
+.producto .producto--prod6 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px silver;
+  background-image: url(../img/tienda6.jpg);
+}
+.producto .producto--prod6:hover {
+  animation: mueveProd 1s infinite;
 }
 
 @keyframes mueveProd {

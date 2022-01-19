@@ -11,6 +11,11 @@ $contenedor: #B7B7A4;
 $fontPresentacion: 'Architects Daughter',
 cursive;
 
+@mixin pm($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +27,6 @@ body {
 }
 
 main {
-    background-repeat: repeat;
     background-color: $fondoMain;
     border-top: 3px solid $fondo;
 }
@@ -101,6 +105,7 @@ footer {
     border-radius: 10px;
     background-color: $contenedor;
     box-shadow: 5px 5px 5px;
+    width: 90%;
 }
 
 
@@ -114,7 +119,7 @@ footer {
     & li>a {
         list-style: none;
         text-decoration: none;
-        font-size: small;
+        font-size: .8rem;
         color: white;
     }
 
@@ -125,7 +130,7 @@ footer {
     }
 
     & img {
-        width: 30px;
+        width: 25px;
     }
 }
 
@@ -134,12 +139,11 @@ footer {
 /* CAJA PRESENTACION DE CONTENIDO */
 
 .presentacion {
-    margin: 10px;
-    min-width: 260px;
+    margin: 15px;
+    padding: 10px;
 
     & img {
         width: 100%;
-        min-width: 250px;
     }
 }
 
@@ -174,8 +178,7 @@ footer {
 
 /* INICIA contenido de TU ESPACIO  */
 .introduccion {
-    margin: 10px;
-    padding: 10px;
+    @include pm(10px, 10px);
 }
 
 /* FINALIZA contenido de TU ESPACIO  */
@@ -183,14 +186,30 @@ footer {
 /* Formulario de contacto */
 #formulario {
     margin: 10px;
+}
 
-    &.campos {
-        & label {
-            padding: 10px;
-            width: 25%; 
-            float: left;
-        }
-    }
+
+.campos li,
+.interno {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include pm(10px, 10px);
+}
+
+.campos>li>label,
+.campos li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.campos>li>label+*,
+.interno {
+    flex: 1 0 220px;
+}
+
+.botonesForm {
+    @include pm(10px, 10px);
 }
 
 /* INICIA CAJA PARA PUBLICIDAD */
@@ -223,35 +242,47 @@ footer {
     flex-wrap: wrap;
     height: auto;
     gap: 10px;
-    padding: 10px;
-    margin: 10px;
+    @include pm(10px, 10px);
 }
 
 .producto {
     width: 200px;
-    height: 200px;
+    height: 250px;
     border: 2px solid #000;
     border-radius: 10px;
     background-color: #F0EFEB;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
-
-    & img {
-        width: 150px;
-        height: 150px;
-        padding: 10px;
-        box-shadow: 10px silver;
-    }
-
-    & img:hover {
-        animation: mueveProd 1s infinite;
-    }
+    @include pm(10px, 10px);
 
     & p {
         background-color: $contenedor;
     }
+
+    $productos: (prod1: 1,
+        prod2: 2,
+        prod3: 3,
+        prod4: 4,
+        prod5: 5,
+        prod6: 6,
+    );
+
+    @each $nroProd,
+    $valorProd in $productos {
+
+        & .producto--#{$nroProd} {
+            width: 150px;
+            height: 150px;
+            @include pm(10px, 10px);
+            box-shadow: 10px silver;
+            background-image: url(../img/tienda#{$valorProd}.jpg);
+        }
+
+        & .producto--#{$nroProd}:hover {
+            animation: mueveProd 1s infinite;
+        }
+    }
 }
+
 
 @keyframes mueveProd {
     0% {
