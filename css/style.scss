@@ -147,10 +147,10 @@ footer {
 .presentacion {
     margin: 30px;
     padding: 15px;
+    
 
     & img {
         width: 100%;
-        // @include pm(30px, 1px);
     }
 }
 
@@ -203,6 +203,10 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     @include pm(10px, 10px);
+}
+
+.place{
+    padding: 8px;
 }
 
 .campos>li>label,

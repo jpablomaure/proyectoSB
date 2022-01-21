@@ -156,6 +156,10 @@ footer {
   margin: 10px;
 }
 
+.place {
+  padding: 8px;
+}
+
 .campos > li > label,
 .campos li p,
 .campos li .titulo h1,
