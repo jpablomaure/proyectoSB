@@ -297,13 +297,68 @@ footer {
         }
 
         & .producto--#{$nroProd}:hover {
-            animation: mueveProd 1s infinite;
+            animation: mueve 1s infinite;
         }
     }
 }
 
 
-@keyframes mueveProd {
+/* FINALIZA TIENDA  */
+
+
+/* INICIA SERVICIOS PRUEBA */
+
+
+
+/* INICIA SERVICIOS  */
+.servicios {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    gap: 10px;
+    @include pm(10px, 10px);
+}
+
+.servicio {
+    width: 400px;
+    height: 500px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #F0EFEB;
+    text-align: center;
+    @include pm(10px, 10px);
+
+    & p {
+        background-color: $contenedor;
+    }
+
+    $servicios: (serv1: 1,
+        serv2: 2,
+        serv3: 3,
+    );
+
+    @each $nroServ,
+    $valorServ in $servicios {
+
+        & .servicio--#{$nroServ} {
+            width: auto;
+            height: 80%;
+
+            @include pm(10px, 10px);
+            box-shadow: 10px silver;
+            background-image: url(../img/servicio#{$valorServ}.jpg);
+            background-size: cover;
+        }
+
+        & .servicio--#{$nroServ}:hover {
+            animation: mueve 1s infinite;
+        }
+    }
+}
+
+@keyframes mueve {
     0% {
         transform: translate(5px);
         transform: escale(.99);
@@ -326,5 +381,3 @@ footer {
     }
 
 }
-
-/* FINALIZA TIENDA  */

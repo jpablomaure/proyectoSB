@@ -233,7 +233,7 @@ footer {
   background-image: url(../img/tienda1.jpg);
 }
 .producto .producto--prod1:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod2 {
   width: 150px;
@@ -244,7 +244,7 @@ footer {
   background-image: url(../img/tienda2.jpg);
 }
 .producto .producto--prod2:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod3 {
   width: 150px;
@@ -255,7 +255,7 @@ footer {
   background-image: url(../img/tienda3.jpg);
 }
 .producto .producto--prod3:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod4 {
   width: 150px;
@@ -266,7 +266,7 @@ footer {
   background-image: url(../img/tienda4.jpg);
 }
 .producto .producto--prod4:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod5 {
   width: 150px;
@@ -277,7 +277,7 @@ footer {
   background-image: url(../img/tienda5.jpg);
 }
 .producto .producto--prod5:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod6 {
   width: 150px;
@@ -288,7 +288,7 @@ footer {
   background-image: url(../img/tienda6.jpg);
 }
 .producto .producto--prod6:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod7 {
   width: 150px;
@@ -299,7 +299,7 @@ footer {
   background-image: url(../img/tienda7.jpg);
 }
 .producto .producto--prod7:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod8 {
   width: 150px;
@@ -310,7 +310,7 @@ footer {
   background-image: url(../img/tienda8.jpg);
 }
 .producto .producto--prod8:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod9 {
   width: 150px;
@@ -321,7 +321,7 @@ footer {
   background-image: url(../img/tienda9.jpg);
 }
 .producto .producto--prod9:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod10 {
   width: 150px;
@@ -332,7 +332,7 @@ footer {
   background-image: url(../img/tienda10.jpg);
 }
 .producto .producto--prod10:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod11 {
   width: 150px;
@@ -343,7 +343,7 @@ footer {
   background-image: url(../img/tienda11.jpg);
 }
 .producto .producto--prod11:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 .producto .producto--prod12 {
   width: 150px;
@@ -354,10 +354,74 @@ footer {
   background-image: url(../img/tienda12.jpg);
 }
 .producto .producto--prod12:hover {
-  animation: mueveProd 1s infinite;
+  animation: mueve 1s infinite;
 }
 
-@keyframes mueveProd {
+/* FINALIZA TIENDA  */
+/* INICIA SERVICIOS PRUEBA */
+/* INICIA SERVICIOS  */
+.servicios {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.servicio {
+  width: 400px;
+  height: 500px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #F0EFEB;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+.servicio p, .servicio .titulo h1, .titulo .servicio h1 {
+  background-color: #B7B7A4;
+}
+.servicio .servicio--serv1 {
+  width: auto;
+  height: 80%;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px silver;
+  background-image: url(../img/servicio1.jpg);
+  background-size: cover;
+}
+.servicio .servicio--serv1:hover {
+  animation: mueve 1s infinite;
+}
+.servicio .servicio--serv2 {
+  width: auto;
+  height: 80%;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px silver;
+  background-image: url(../img/servicio2.jpg);
+  background-size: cover;
+}
+.servicio .servicio--serv2:hover {
+  animation: mueve 1s infinite;
+}
+.servicio .servicio--serv3 {
+  width: auto;
+  height: 80%;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px silver;
+  background-image: url(../img/servicio3.jpg);
+  background-size: cover;
+}
+.servicio .servicio--serv3:hover {
+  animation: mueve 1s infinite;
+}
+
+@keyframes mueve {
   0% {
     transform: translate(5px);
     transform: escale(0.99);
@@ -377,6 +441,5 @@ footer {
     border: 1px solid black;
   }
 }
-/* FINALIZA TIENDA  */
 
 /*# sourceMappingURL=style.css.map */
