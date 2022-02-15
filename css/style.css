@@ -358,66 +358,135 @@ footer {
 }
 
 /* FINALIZA TIENDA  */
-/* INICIA SERVICIOS PRUEBA */
 /* INICIA SERVICIOS  */
-.servicios {
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
+.contenedor {
+  display: grid;
+  grid-template-areas: "servicio1 servicio1 servicio1" "serv1 serv2 serv3" "servicio2 servicio2 servicio2" "serv4 serv5 serv6" "servicio3 servicio3 servicio3" "serv7 serv8 serv9";
+  grid-template-rows: 50px 190px 50px 190px 50px 190px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
   height: auto;
+  grid-gap: 5px;
   justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  margin: 10px;
+  padding: 30px;
+  margin: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #B7B7A4;
+  box-shadow: 5px 5px 5px;
 }
 
 .servicio {
-  width: 400px;
-  height: 500px;
-  border: 2px solid #000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  border: 1px solid black;
   border-radius: 10px;
-  background-color: #F0EFEB;
+  width: 150px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.servicio1 {
+  grid-area: servicio1;
+  background-color: #A5A58D;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
+  line-height: center;
 }
-.servicio p, .servicio .titulo h1, .titulo .servicio h1 {
-  background-color: #B7B7A4;
+
+.servicio2 {
+  grid-area: servicio2;
+  background-color: #A5A58D;
+  text-align: center;
+  line-height: center;
 }
-.servicio .servicio--serv1 {
-  width: auto;
-  height: 80%;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 10px silver;
+
+.servicio3 {
+  grid-area: servicio3;
+  background-color: #A5A58D;
+  text-align: center;
+  line-height: center;
+}
+
+.serv1 {
+  grid-area: serv1;
   background-image: url(../img/servicio1.jpg);
-  background-size: cover;
+  align-items: center;
 }
-.servicio .servicio--serv1:hover {
+.serv1:hover {
   animation: mueve 1s infinite;
 }
-.servicio .servicio--serv2 {
-  width: auto;
-  height: 80%;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 10px silver;
+
+.serv2 {
+  grid-area: serv2;
   background-image: url(../img/servicio2.jpg);
-  background-size: cover;
+  align-items: center;
 }
-.servicio .servicio--serv2:hover {
+.serv2:hover {
   animation: mueve 1s infinite;
 }
-.servicio .servicio--serv3 {
-  width: auto;
-  height: 80%;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 10px silver;
+
+.serv3 {
+  grid-area: serv3;
   background-image: url(../img/servicio3.jpg);
-  background-size: cover;
+  align-items: center;
 }
-.servicio .servicio--serv3:hover {
+.serv3:hover {
+  animation: mueve 1s infinite;
+}
+
+.serv4 {
+  grid-area: serv4;
+  background-image: url(../img/servicio4.jpg);
+  align-items: center;
+}
+.serv4:hover {
+  animation: mueve 1s infinite;
+}
+
+.serv5 {
+  grid-area: serv5;
+  background-image: url(../img/servicio5.jpg);
+  align-items: center;
+}
+.serv5:hover {
+  animation: mueve 1s infinite;
+}
+
+.serv6 {
+  grid-area: serv6;
+  background-image: url(../img/servicio6.jpg);
+  align-items: center;
+}
+.serv6:hover {
+  animation: mueve 1s infinite;
+}
+
+.serv7 {
+  grid-area: serv7;
+  background-image: url(../img/servicio7.jpg);
+  align-items: center;
+}
+.serv7:hover {
+  animation: mueve 1s infinite;
+}
+
+.serv8 {
+  grid-area: serv8;
+  background-image: url(../img/servicio8.jpg);
+  align-items: center;
+}
+.serv8:hover {
+  animation: mueve 1s infinite;
+}
+
+.serv9 {
+  grid-area: serv9;
+  background-image: url(../img/servicio9.jpg);
+  align-items: center;
+}
+.serv9:hover {
   animation: mueve 1s infinite;
 }
 
@@ -441,5 +510,42 @@ footer {
     border: 1px solid black;
   }
 }
+@media only screen and (max-width: 700px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "servicio1 servicio1" "serv1 serv2" "serv3 serv3" "servicio2 servicio2" "serv4 serv5" "serv6 serv6" "servicio3 servicio3" "serv7 serv8" "serv9 serv9";
+    grid-template-rows: 50px 190px 190px 50px 190px 190px 50px 190px 190px;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    height: auto;
+    grid-gap: 5px;
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #B7B7A4;
+    box-shadow: 5px 5px 5px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "servicio1" "serv1" "serv2" "serv3" "servicio2" "serv4" "serv5" "serv6" "servicio3" "serv7" "serv8" "serv9";
+    grid-template-rows: 70px 190px 190px 185px 50px 190px 190px 190px 50px 190px 190px 190px;
+    grid-template-columns: 1fr;
+    width: 85%;
+    height: auto;
+    grid-gap: 5px;
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #B7B7A4;
+    box-shadow: 5px 5px 5px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* FINALIZA SERVICIOS  */
 
 /*# sourceMappingURL=style.css.map */

@@ -306,53 +306,60 @@ footer {
 /* FINALIZA TIENDA  */
 
 
-/* INICIA SERVICIOS PRUEBA */
-
-
-
 /* INICIA SERVICIOS  */
-.servicios {
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "servicio1 servicio1 servicio1"
+        "serv1 serv2 serv3"
+        "servicio2 servicio2 servicio2"
+        "serv4 serv5 serv6"
+        "servicio3 servicio3 servicio3"
+        "serv7 serv8 serv9";
+    grid-template-rows: 50px 190px 50px 190px 50px 190px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: auto;
     height: auto;
+    grid-gap: 5px;
     justify-content: center;
-    gap: 10px;
-    @include pm(10px, 10px);
+    @include pm(30px, 30px);
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #B7B7A4;
+    box-shadow: 5px 5px 5px;
 }
 
 .servicio {
-    width: 400px;
-    height: 500px;
-    border: 2px solid #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border: 1px solid black;
     border-radius: 10px;
-    background-color: #F0EFEB;
-    text-align: center;
-    @include pm(10px, 10px);
+    width: 150px;
+    @include pm(20px, 20px);
+}
 
-    & p {
-        background-color: $contenedor;
+@for $i from 1 through 3 {
+    .servicio#{$i} {
+        grid-area: servicio#{$i};
+        background-color: $fondo;
+        // justify-content: center;
+        text-align: center;
+        line-height: center;
     }
 
-    $servicios: (serv1: 1,
-        serv2: 2,
-        serv3: 3,
-    );
+}
 
-    @each $nroServ,
-    $valorServ in $servicios {
 
-        & .servicio--#{$nroServ} {
-            width: auto;
-            height: 80%;
+@for $i from 1 through 9 {
+    .serv#{$i} {
+        grid-area: serv#{$i};
+        background-image: url(../img/servicio#{$i}.jpg);
+        align-items: center;
 
-            @include pm(10px, 10px);
-            box-shadow: 10px silver;
-            background-image: url(../img/servicio#{$valorServ}.jpg);
-            background-size: cover;
-        }
-
-        & .servicio--#{$nroServ}:hover {
+        &:hover {
             animation: mueve 1s infinite;
         }
     }
@@ -381,3 +388,62 @@ footer {
     }
 
 }
+
+@media only screen and (max-width: 700px) {
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "servicio1 servicio1"
+            "serv1 serv2"
+            "serv3 serv3"
+            "servicio2 servicio2"
+            "serv4 serv5"
+            "serv6 serv6"
+            "servicio3 servicio3"
+            "serv7 serv8"
+            "serv9 serv9";
+        grid-template-rows: 50px 190px 190px 50px 190px 190px 50px 190px 190px;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        height: auto;
+        grid-gap: 5px;
+        @include pm(30px, 30px);
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #B7B7A4;
+        box-shadow: 5px 5px 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "servicio1"
+            "serv1"
+            "serv2"
+            "serv3"
+            "servicio2"
+            "serv4"
+            "serv5"
+            "serv6"
+            "servicio3"
+            "serv7"
+            "serv8"
+            "serv9";
+        grid-template-rows: 70px 190px 190px 185px 50px 190px 190px 190px 50px 190px 190px 190px;
+        grid-template-columns: 1fr;
+        width: 85%;
+        height: auto;
+        grid-gap: 5px;
+        @include pm(30px, 30px);
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #B7B7A4;
+        box-shadow: 5px 5px 5px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* FINALIZA SERVICIOS  */
